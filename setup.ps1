@@ -14,10 +14,6 @@ Invoke-WebRequest -Uri "https://www.dropbox.com/s/5t1hte7y1ctff9j/winfsp.msi?dl=
 Invoke-WebRequest -Uri "https://www.dropbox.com/sh/a8ir09k745ymv4p/AADOcDdkkcGDWCoP-jm0Mn8xa?dl=1" -OutFile C:\down\rclone.zip
 Expand-Archive -LiteralPath 'C:\down\rclone.zip' -DestinationPath C:\rclone\
 
-<# DOWNLOAD VIPERRIPPER #>
-Invoke-WebRequest -Uri "https://www.dropbox.com/sh/gq7ove5h79pqkwp/AAA-FcrXL3jgpWti9SycVyFOa?dl=1" -OutFile C:\down\VIPR.zip
-Expand-Archive -LiteralPath 'C:\down\VIPR.zip' -DestinationPath C:\VIPR\
-
 <# DOWNLOAD TOTAL COMMANDER #>
 Invoke-WebRequest -Uri "https://www.dropbox.com/sh/ma6bsg279ap03gf/AABQz-8OOipk4N9VFWWdOVPLa?dl=1" -OutFile C:\down\TCM.zip
 Expand-Archive -LiteralPath 'C:\down\TCM.zip' -DestinationPath C:\TOTAL\
@@ -171,7 +167,4 @@ msiexec /i "C:\TOOLS2\winfsp.msi" /q
 Start-Process -FilePath "C:\TOTAL\TOTALCMD.exe"
 
 <# MOUNT VIPER GALLERIES #>
-Start-Process -FilePath "C:\rclone\MOUNT_VIPER.bat"
-
-<# START VRIPPER #>
-Start-Process -FilePath "C:\VIPR\ViperRipper.exe"
+Start-Process -FilePath "C:\rclone\TRANSFER_BABES.bat"
