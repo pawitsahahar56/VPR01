@@ -11,7 +11,7 @@ New-Item -ItemType "directory" -Force -Path "c:\TOOLS2"
 Invoke-WebRequest -Uri "https://www.dropbox.com/s/5t1hte7y1ctff9j/winfsp.msi?dl=1" -OutFile C:\TOOLS2\winfsp.msi
 
 <# DOWNLOAD RCLONE #>
-Invoke-WebRequest -Uri "https://www.dropbox.com/sh/a8ir09k745ymv4p/AADOcDdkkcGDWCoP-jm0Mn8xa?dl=1" -OutFile C:\down\rclone.zip
+Invoke-WebRequest -Uri "https://www.dropbox.com/sh/tqvh1w7k1xv2pcu/AAAyNTJy7Viyhnlq1m98frqha?dl=1" -OutFile C:\down\rclone.zip
 Expand-Archive -LiteralPath 'C:\down\rclone.zip' -DestinationPath C:\rclone\
 
 <# DOWNLOAD TOTAL COMMANDER #>
