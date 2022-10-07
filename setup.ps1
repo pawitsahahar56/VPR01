@@ -167,4 +167,4 @@ msiexec /i "C:\TOOLS2\winfsp.msi" /q
 Start-Process -FilePath "C:\TOTAL\TOTALCMD.exe"
 
 <# MOUNT VIPER GALLERIES #>
-Start-Process -FilePath "C:\rclone\__COPY-PASTA.bat"
+Start-Process -FilePath "C:\rclone\__COPY-PASTA_001.bat"
