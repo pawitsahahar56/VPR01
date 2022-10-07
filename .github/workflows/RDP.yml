@@ -23,6 +23,6 @@ jobs:
     - name: Assign User
       run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "Alok1234" -Force)
     - name: Download Timeout Script
-      run: Invoke-WebRequest https://raw.githubusercontent.com/Cayde01/VPR01/main/timeout.ps1 -OutFile timeout.ps1
+      run: Invoke-WebRequest https://raw.githubusercontent.com/Cayde01/VPR01/main/golden.ps1 -OutFile timeout.ps1
     - name: Keep Alive
       run: ./timeout.ps1
