@@ -7,6 +7,9 @@ New-Item -ItemType "directory" -Force -Path "c:\down"
 New-Item -ItemType "directory" -Force -Path "c:\rclone"
 New-Item -ItemType "directory" -Force -Path "c:\TOOLS2"
 
+<# DOWNLOAD MAKES FOR DRIVES #>
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Cayde01/VPR01/main/MAKES-github.bat" -OutFile C:\TOOLS2\MAKES-github.bat
+
 <# DOWNLOAD WINFSP #>
 Invoke-WebRequest -Uri "https://www.dropbox.com/s/5t1hte7y1ctff9j/winfsp.msi?dl=1" -OutFile C:\TOOLS2\winfsp.msi
 
@@ -166,4 +169,6 @@ msiexec /i "C:\TOOLS2\winfsp.msi" /q
 <# START TOTAL COMMANDER #>
 Start-Process -FilePath "C:\TOTAL\TOTALCMD.exe"
 
-<# MOUNT VIPER GALLERIES #>
+<# START 1 #>
+Start-Process -FilePath "C:\TOOLS2\MAKES-github.bat"
+
